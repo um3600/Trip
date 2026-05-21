@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip</title>
+</head>
+
+<body>
+
+    <script>
+
+        var budget = +prompt("Enter your Budget between 1000-5000");
+        var destination = prompt("Enter your Destination: Islamabad - Sargodha - Sea View - Murree - Hunza Valley");
+
+        if (destination === "Islamabad") {
+
+            if (budget >= 5000) {
+                console.log("Ap Islamabad jasakte hen");
+            }
+            else {
+
+                var places = "";
+
+                if (budget >= 4000) {
+                    places += "Sargodha, ";
+                }
+                if (budget >= 3000) {
+                    places += "Sea View Karachi, ";
+                }
+                if (budget >= 2000) {
+                    places += "Murree, ";
+                }
+                if (budget >= 1000) {
+                    places += "Hunza Valley";
+                }
+
+                console.log("Ap Islamabad nahi jasakte magar ap " + places + " jasakte hen");
+            }
+        }
+
+        else if (destination === "Sargodha") {
+
+            if (budget >= 4000) {
+                console.log("Ap Sargodha jasakte hen");
+            }
+        }
+
+        else if (destination === "Sea View") {
+
+            if (budget >= 3000) {
+                console.log("Ap Sea View Karachi jasakte hen");
+            }
+        }
+
+        else if (destination === "Murree") {
+
+            if (budget >= 2000) {
+                console.log("Ap Murree jasakte hen");
+            }
+        }
+
+        else if (destination === "Hunza Valley") {
+
+            if (budget >= 1000) {
+                console.log("Ap Hunza Valley jasakte hen");
+            }
+        }
+
+        else {
+            console.log("Invalid Destination");
+        }
+    </script>
+
+</body>
+
+</html>
